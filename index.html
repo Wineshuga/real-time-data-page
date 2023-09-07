@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Time Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div data-testid="currentDayOfTheWeek">Date: <span class="date"></span></div>
+    <div data-testid="currentUTCTime">Time: <span class="time"></span></div>
+  </header>
+
+  <main>
+    <hr />
+    <section class="main-section">
+      <img data-testid="slackDisplayImage" src="./wineshuga.jpg" alt="Wineshuga">
+      <section class="main-text">
+        <p data-testid="slackUserName">Slack name: Wineshuga</p>
+        <p data-testid="myTrack">Track: Frontend</p>
+        <p data-testid=“githubURL”>Github Profile: <a href="https://github.com/wineshuga">Check me out</a></p>
+      </section>
+    </section>
+  </main>
+  
+  <script src="./index.js"></script>
+</body>
+</html>
