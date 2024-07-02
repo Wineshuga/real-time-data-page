@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Real Time Page</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <p data-testid="currentDayOfTheWeek" class="date"></p>
-    <p data-testid="currentUTCTime" class="time"></p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Time Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="date-div">
+        <p>Date:</p>
+        <p data-testid="currentDay" class="date"></p>
+      </div>
+      <div class="time-div">
+        <p>Time:</p>
+        <p data-testid="currentTimeUTC" class="time"></p>
+      </div>
+    </header>
 
-  <main>
-    <hr />
-    <section class="main-section">
-      <img data-testid="slackDisplayImage" src="./wineshuga.jpg" alt="Wineshuga">
-      <section class="main-text">
-        <p data-testid="slackUserName">Wineshuga</p>
-        <p data-testid="myTrack">Frontend</p>
-        <p data-testid=“githubURL”><a href="https://github.com/wineshuga">Github Profile</a></p>
+    <main>
+      <hr />
+      <section class="main-section">
+        <img
+          data-testid="slackProfilePicture"
+          src="./displayImg.jpeg"
+          alt="Wineshuga"
+        />
+        <section class="main-text">
+          <h1 data-testid="slackUserName">Wineshuga</h1>
+          <p>To reach out to me, kindly use this email: <span  class="email" data-testid="slackEmail">Uziwinnie@gmail.com</span></p>
+          
+          <h3>Goals in Tech</h3>
+          <p>
+            In the next two years, I have the following goals to I want to
+            achieve:
+          </p>
+          <ol>
+            <li>Get a fully remote international job</li>
+            <li>Expand to becoming a software engineer</li>
+            <li>Start a lucrative business</li>
+          </ol>
+        </section>
       </section>
-    </section>
-  </main>
-  
-  <script src="./index.js"></script>
-</body>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
 </html>
